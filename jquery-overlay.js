@@ -49,8 +49,8 @@ module.exports = function ($, udf) {
     Constructor.prototype = {
         constructor : Constructor,
         _init : function () {
-            this.overlay = $('.' + datakey + '-bg').length
-                ? $('.' + datakey + '-bg')
+            this.overlay = $('.' + datakey + 'bg').length
+                ? $('.' + datakey + 'bg')
                 : $('<div/>', {class : datakey + 'bg', style : 'display:none;'});
 
             $('body').append(this.overlay);
